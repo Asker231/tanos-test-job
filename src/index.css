@@ -6,9 +6,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  body{
+    background-color:#25283B;
+  }
+}
+
 @layer components{
+  .vis{
+    opacity: 0;
+  }
+  .updown{
+    position: absolute;
+    transition: 4s;
+    animation: arrow 3s  ease-in-out infinite;
+    animation-duration: 0;
+  }
+  @keyframes arrow{
+       0%{
+        top: -70px;
+       }80%{
+        top: -40px;
+       }100%{
+        top: -70px;
+       }
+  }
   .wrap{
     background:linear-gradient(140deg,#482DB3,#AF61CF);
+  }
+  .texts{
+    opacity: 0;
+  }
+  .texts2{
+    opacity: 0;
+  }
+  .texts3{
+    opacity: 0;
+  }
+  .image{
+
+    opacity: 0;
   }
   .link{
     font-family: "Inter", sans-serif;
