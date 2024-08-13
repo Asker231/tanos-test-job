@@ -1,8 +1,8 @@
 import { IButton } from "../../interfaces/Button"
 
-function Button({children,...prop}:IButton) {
+function Button({typeButton,children,...prop}:IButton) {
   return (
-    <button {...prop}>{children}</button>
+    <button className = {typeButton == "Big" ? "w-[246px] h-[60px] bg-primary text-white roboto uppercase font-bold rounded-md" : " uppercase w-[185px] h-[60px] bg-primary text-white roboto font-bold rounded-md" }{...prop}>{children}</button>
   )
 }
 
