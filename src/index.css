@@ -59,4 +59,7 @@
   .roboto{
     font-family: "Roboto", sans-serif;
   }
+.form{
+  opacity: 0;
+}
 }
